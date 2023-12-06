@@ -13,7 +13,7 @@ class Node
 
     //the rest of the req fxns
     Node* getNext();
-    Student getStudent();
+    Student* getStudent();
     void setNext(Node* nNext);
     private: 
     Student* student;

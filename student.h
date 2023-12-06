@@ -9,7 +9,7 @@ const int SIZE = 50;
 class Student
 {
     public:
-    char* setName(char nameOne);
+    char* setName(char* nameOne);
     char* getName();
 
     private:
