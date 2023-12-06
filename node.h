@@ -7,12 +7,14 @@ class Node
 {
     public:
     //constructor
-    Node(Student* student);
+    Node(Student*);
     //destructor
     ~Node();
-    Node* getNext() const;
-    Student getStudent() const;
-    void setNext(Node* next);
+
+    //the rest of the req fxns
+    Node* getNext();
+    Student getStudent();
+    void setNext(Node* nNext);
     private: 
     Student* student;
     Node* next;

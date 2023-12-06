@@ -2,23 +2,29 @@
 #include <iostream>
 using namespace std;
 
-Node::Node(Student* student)
+Node::Node(Student* nStudent)
 {
+    student = nStudent;
+    next = NULL
 
 }
 Node::~Node()
 {
+    //explained to us in class
+    delete student;
+    next = NULL;
 
 }
-Node::Node* getnext()
+Node* Node::getNext()
 {
-
+    return next;
 }
-Node::Student getStudent() const
+Student*  Node::getStudent() const
 {
-
+    return student;
 }
-Node::void setNext(Node* next)
+void Node::setNext(Node* nNext)
 {
+    next = nNext;
 
 }
