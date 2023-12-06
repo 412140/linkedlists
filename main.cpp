@@ -19,14 +19,15 @@ mr galbraith (helping both of us in class )
 
 using namespace std;
 
+//fxn prototypes
 
 void add(char* newStu);
 void print(Node* next);
-void rem(Node*);
+Node* head = NULL;
 
 int main()
 {
-    Node* head = NULL;
+   // make it global insetad Node* head = NULL;
 
     char* stuOne = new char[SIZE];
     strcpy(stuOne, "bike");
@@ -37,9 +38,10 @@ int main()
     add(stuTwo);
     print(head);
 
-    ~Node*();
+    delete head; 
+    head = NULL;
 
-
+    return 0; //return
 }
 
 void add(char* newStu)

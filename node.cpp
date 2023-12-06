@@ -1,11 +1,11 @@
 #include "node.h"
 #include <iostream>
 using namespace std;
-
+//most of this file is from the video + class heklp
 Node::Node(Student* nStudent)
 {
     student = nStudent;
-    next = NULL
+    next = NULL;
 
 }
 Node::~Node()
@@ -19,7 +19,7 @@ Node* Node::getNext()
 {
     return next;
 }
-Student*  Node::getStudent() const
+Student* Node::getStudent()
 {
     return student;
 }
